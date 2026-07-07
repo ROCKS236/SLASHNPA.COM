@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLASHNPA | PREMIER RESOLUTION UNIT</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Massive Sticky Header -->
+    <nav class="navbar" id="navbar">
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 0 10%;">
+            <a href="#"><img src="logo.png" alt="SlashNPA" style="height: 120px;"></a>
+            <div style="display: flex; gap: 4rem;">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-link" style="color: #00FF88;">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Ultra-Impact Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 style="color: #fff;">REDUCING NPAs.<br><span style="color: #00FF88;">RESTORING VALUE.</span></h1>
+            <p>India's Specialist NPA Resolution Unit. We eliminate the Execution Gap to deliver maximum recovery.</p>
+            <a href="#contact" class="btn-cta">CONSULT AN EXPERT NOW</a>
+        </div>
+    </section>
+
+    <!-- Pillar Section -->
+    <section id="services">
+        <h2 class="section-title">Three Pillars of Excellence</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>⚖️ LEGALFORCE</h3>
+                <p>Complete in-house legal enforcement. From Section 13 notices to final recovery certificates.</p>
+            </div>
+            <div class="card">
+                <h3>🛡️ ASSETSHIELD</h3>
+                <p>24x7 Physical possession, armed security, and safe custody of distressed assets.</p>
+            </div>
+            <div class="card">
+                <h3>🤝 SETTLERIGHT</h3>
+                <p>Strategic OTS facilitation and borrower engagement for clean, mutually beneficial exits.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="background: #00FF88; color: #001A33;">
+        <div style="max-width: 1000px; margin: auto; text-align: center;">
+            <h2 style="font-size: 5rem; font-weight: 900; margin-bottom: 2rem;">READY TO SLASH YOUR NPA?</h2>
+            <p style="font-size: 2rem; font-weight: 700; margin-bottom: 4rem;">Partner with the world-class resolution firm.</p>
+            <div class="contact-form">
+                <form>
+                    <input type="text" placeholder="FULL NAME" class="input-field">
+                    <input type="email" placeholder="OFFICIAL EMAIL" class="input-field">
+                    <textarea placeholder="PORTFOLIO DETAILS" rows="5" class="input-field"></textarea>
+                    <button type="submit" class="btn-cta" style="width: 100%; border: none; cursor: pointer;">SEND RECOVERY REQUEST</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer style="padding: 100px 0; text-align: center; background: #000;">
+        <img src="logo.png" alt="SlashNPA" style="height: 150px; margin-bottom: 2rem; filter: brightness(2);">
+        <p style="font-size: 3rem; font-weight: 900; color: #00FF88; letter-spacing: 20px;">SLASHNPA</p>
+        <p style="margin-top: 2rem; font-weight: 700; color: #555;">© 2026 SLASHNPA | INFO@SLASHNPA.COM</p>
+    </footer>
+
+    <script>
+        window.onscroll = function() {
+            var nav = document.getElementById('navbar');
+            if (window.pageYOffset > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        };
+    </script>
+</body>
+</html>
