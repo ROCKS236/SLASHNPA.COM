@@ -1,26 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SlashNPA | Specialist NPA Resolution Firm</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlashNPA - Reducing NPAs. Restoring Values.</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo.png" type="image/png">
 </head>
 <body>
-    <nav class="navbar"><div style="display: flex; justify-content: space-between; align-items: center; padding: 0 10%;">
-        <a href="index.html"><img src="logo.png" alt="SlashNPA" style="height: 100px;"></a>
-        <div>
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="about.html" class="nav-link">About</a>
-            <a href="services.html" class="nav-link">Services</a>
-            <a href="contact.html" class="nav-link" style="color:var(--green)">Contact</a>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="header-logo">
+                <img src="logo.png" alt="SlashNPA Logo">
+            </a>
+            <button class="nav-toggle" onclick="toggleNav()">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="legalforce.html">LegalForce</a>
+                <a href="assetshield.html">AssetShield</a>
+                <a href="settleright.html">SettleRight</a>
+                <a href="contact.html" class="nav-cta">Contact Us</a>
+            </nav>
         </div>
-    </div></nav>
-    <header class="hero"><div>
-        <p style="color: var(--accent); font-weight: 900; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 1rem;">India's Specialist NPA Resolution Firm</p>
-        <h1>REDUCING NPAs.<br><span style="color: var(--accent);">RESTORING VALUE.</span></h1>
-        <p style="font-size: 1.5rem; color: #fff; margin: 2rem 0;">Eliminating the "Execution Gap" between legal orders and field recovery.</p>
-        <a href="contact.html" style="background:var(--green); color:#fff; padding: 1.25rem 3rem; border-radius:12px; font-weight:800; text-decoration:none; display:inline-block;">Consult an Expert</a>
-    </div></header>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-bg-image" style="background-image: url('https://static.prod-images.emergentagent.com/jobs/a4baba2c-376d-4b8c-9a96-2b525d18a2c8/images/afdd9255a5288e61bcdd5e1880a427857a99ccb2efa2ae9c84d1fa240c17ac61.png');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Reducing NPAs.<br><span>Restoring Values.</span></h1>
+            <p>India's most comprehensive NPA resolution platform — integrating legal enforcement, physical asset management, and structured settlements under one roof.</p>
+            <a href="contact.html" class="hero-btn">Get Started →</a>
+        </div>
+    </section>
+
+    <!-- THE EXECUTION GAP -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">The Challenge</span>
+                <h2>The Execution Gap</h2>
+                <p>Banks and financial institutions lose billions annually — not due to lack of legal provisions, but because of fragmented execution across recovery processes.</p>
+            </div>
+            <div class="grid-2">
+                <div>
+                    <h3 style="font-size:1.5rem; font-weight:800; color:var(--navy); margin-bottom:16px;">Why NPAs Persist</h3>
+                    <p style="color:var(--text-muted); line-height:1.8; margin-bottom:24px;">The Indian banking sector faces a systemic challenge: while legal frameworks like SARFAESI, DRT, and IBC exist, the real bottleneck lies in execution. Multiple vendors, inconsistent follow-ups, lack of coordination between legal and physical possession teams, and absence of a unified strategy result in delayed recoveries and eroded asset values.</p>
+                    <div class="pillar-highlight">
+                        <p style="font-weight:600; color:var(--navy);">SlashNPA bridges this gap with an integrated execution model that treats legal, physical, and settlement processes as one unified recovery lifecycle.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="card" style="background:var(--light-gray);">
+                        <h3 style="color:var(--navy); margin-bottom:16px;">Industry Pain Points</h3>
+                        <ul class="feature-list">
+                            <li><span class="check">✕</span> Fragmented vendor ecosystem</li>
+                            <li><span class="check">✕</span> Delayed possession & security lapses</li>
+                            <li><span class="check">✕</span> Legal follow-up inconsistencies</li>
+                            <li><span class="check">✕</span> Asset value deterioration</li>
+                            <li><span class="check">✕</span> No unified MIS or dashboards</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THREE PILLARS -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Solutions</span>
+                <h2>Three Pillars of Resolution</h2>
+                <p>A fully integrated platform delivering end-to-end NPA recovery through three specialized verticals.</p>
+            </div>
+            <div class="grid-3">
+                <div class="card animate-on-scroll">
+                    <div class="card-icon">⚖️</div>
+                    <h3>LegalForce</h3>
+                    <p>Complete in-house legal enforcement across SARFAESI, DRT, and IBC proceedings — with dedicated teams for each forum and jurisdiction.</p>
+                    <a href="legalforce.html" class="card-link">Learn More →</a>
+                </div>
+                <div class="card animate-on-scroll">
+                    <div class="card-icon">🛡️</div>
+                    <h3>AssetShield</h3>
+                    <p>Physical possession, 24×7 security deployment, inventory management, property maintenance, and technology-driven e-auction facilitation.</p>
+                    <a href="assetshield.html" class="card-link">Learn More →</a>
+                </div>
+                <div class="card animate-on-scroll">
+                    <div class="card-icon">🤝</div>
+                    <h3>SettleRight</h3>
+                    <p>Structured One-Time Settlement facilitation with a proven 4-stage process — from borrower profiling to final documentation and closure.</p>
+                    <a href="settleright.html" class="card-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Impact</span>
+                <h2>Built for Scale & Results</h2>
+            </div>
+            <div class="stats-row">
+                <div class="stat-item">
+                    <div class="number">₹500Cr+</div>
+                    <div class="label">Assets Under Management</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">3</div>
+                    <div class="label">Integrated Verticals</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">Pan-India</div>
+                    <div class="label">Coverage</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">100%</div>
+                    <div class="label">In-House Execution</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner">
+        <h2>Ready to Slash Your NPAs?</h2>
+        <p>Partner with India's most integrated NPA resolution platform. Let's turn your stressed assets into recovered value.</p>
+        <a href="contact.html" class="btn-white">Schedule a Consultation →</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="logo.png" alt="SlashNPA" style="height:60px; filter:brightness(0) invert(1);">
+                <p>India's most integrated NPA resolution platform — bridging the execution gap with legal, physical, and settlement expertise under one roof.</p>
+            </div>
+            <div>
+                <h4>Solutions</h4>
+                <ul>
+                    <li><a href="legalforce.html">LegalForce</a></li>
+                    <li><a href="assetshield.html">AssetShield</a></li>
+                    <li><a href="settleright.html">SettleRight</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:info@slashnpa.com">info@slashnpa.com</a></li>
+                    <li><a href="#">Mumbai, India</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 SlashNPA. All Rights Reserved.</span>
+            <span>Reducing NPAs. Restoring Values.</span>
+        </div>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            document.getElementById('navMenu').classList.toggle('active');
+        }
+        // Scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>
