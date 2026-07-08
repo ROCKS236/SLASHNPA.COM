@@ -48,13 +48,7 @@
                     <h2 style="font-size:2rem; font-weight:900; color:var(--navy); margin-bottom:8px;">Send Us a Message</h2>
                     <p style="color:var(--text-muted); margin-bottom:32px;">Fill in the form below and our team will get back to you within 24 hours.</p>
 
-                    <!-- 
-                        Formspree integration for GitHub Pages static hosting.
-                        Replace 'xyzformid' with your actual Formspree form ID.
-                        Fallback: mailto action if Formspree is not configured.
-                    -->
-                    <form id="contactForm" action="https://formspree.io/f/xyzformid" method="POST" novalidate>
-                        <!-- Hidden field to route email to info@slashnpa.com via Formspree -->
+                    <form id="contactForm" action="https://formspree.io/info@slashnpa.com" method="POST" novalidate>
                         <input type="hidden" name="_replyto" value="info@slashnpa.com">
                         <input type="hidden" name="_subject" value="New Lead from SlashNPA Website">
 
@@ -99,7 +93,6 @@
                             Send Message →
                         </button>
 
-                        <!-- Success/Error Messages -->
                         <div id="formSuccess" style="display:none; margin-top:20px; padding:16px 20px; background:rgba(0,157,92,0.08); border-radius:10px; border-left:4px solid var(--green);">
                             <p style="color:var(--green); font-weight:700; margin-bottom:4px;">✓ Message Sent Successfully</p>
                             <p style="color:var(--text-muted); font-size:0.9rem;">Thank you for reaching out. Our team will contact you within 24 hours.</p>
@@ -111,11 +104,9 @@
                     </form>
                 </div>
 
-                <!-- CONTACT INFO -->
                 <div>
                     <div class="contact-info-box">
                         <h3>Contact Information</h3>
-
                         <div class="contact-info-item">
                             <div class="icon">✉️</div>
                             <div class="text">
@@ -123,7 +114,6 @@
                                 <p><a href="mailto:info@slashnpa.com" style="color:var(--green);">info@slashnpa.com</a></p>
                             </div>
                         </div>
-
                         <div class="contact-info-item">
                             <div class="icon">📍</div>
                             <div class="text">
@@ -131,15 +121,13 @@
                                 <p>Mumbai, Maharashtra<br>India</p>
                             </div>
                         </div>
-
                         <div class="contact-info-item">
-                            <div class="icon">🕒</div>
+                            <div class="icon">🕐</div>
                             <div class="text">
                                 <h4>Business Hours</h4>
                                 <p>Monday – Saturday<br>9:00 AM – 7:00 PM IST</p>
                             </div>
                         </div>
-
                         <div class="contact-info-item">
                             <div class="icon">⚡</div>
                             <div class="text">
@@ -149,7 +137,6 @@
                         </div>
                     </div>
 
-                    <!-- QUICK LINKS -->
                     <div class="card" style="margin-top:24px; border-left:4px solid var(--green);">
                         <h3 style="margin-bottom:16px;">Explore Our Solutions</h3>
                         <ul style="list-style:none;">
@@ -175,7 +162,6 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-inner">
             <div class="footer-brand">
@@ -216,7 +202,6 @@
             document.getElementById('navMenu').classList.toggle('active');
         }
 
-        // Form submission handler with Formspree + mailto fallback
         const form = document.getElementById('contactForm');
         const submitBtn = document.getElementById('submitBtn');
         const successMsg = document.getElementById('formSuccess');
@@ -224,8 +209,6 @@
 
         form.addEventListener('submit', async function(e) {
             e.preventDefault();
-
-            // Client-side validation
             const name = document.getElementById('name').value.trim();
             const email = document.getElementById('email').value.trim();
             const mobile = document.getElementById('mobile').value.trim();
@@ -235,21 +218,18 @@
                 return;
             }
 
-            // Email format validation
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(email)) {
                 alert('Please enter a valid email address.');
                 return;
             }
 
-            // Mobile format validation (at least 10 digits)
             const mobileDigits = mobile.replace(/[\s\-\+]/g, '');
             if (mobileDigits.length < 10) {
                 alert('Please enter a valid mobile number (minimum 10 digits).');
                 return;
             }
 
-            // Show loading state
             submitBtn.textContent = 'Sending...';
             submitBtn.disabled = true;
             successMsg.style.display = 'none';
@@ -267,11 +247,9 @@
                     successMsg.style.display = 'block';
                     form.reset();
                 } else {
-                    // Fallback: open mailto
                     openMailtoFallback(name, email, mobile);
                 }
             } catch (error) {
-                // Network error — use mailto fallback
                 openMailtoFallback(name, email, mobile);
             }
 
@@ -283,17 +261,12 @@
             const org = document.getElementById('organization').value || 'Not specified';
             const service = document.getElementById('service').value || 'Not specified';
             const message = document.getElementById('message').value || 'No message';
-
             const subject = encodeURIComponent('New Inquiry from SlashNPA Website');
-            const body = encodeURIComponent(
-                `Name: ${name}\nEmail: ${email}\nMobile: ${mobile}\nOrganization: ${org}\nService Interest: ${service}\n\nMessage:\n${message}`
-            );
-
+            const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMobile: ${mobile}\nOrganization: ${org}\nService Interest: ${service}\n\nMessage:\n${message}`);
             window.location.href = `mailto:info@slashnpa.com?subject=${subject}&body=${body}`;
             successMsg.style.display = 'block';
         }
 
-        // Scroll animations
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) entry.target.classList.add('visible');
