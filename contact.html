@@ -3,127 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consult an Expert | SlashNPA Authority</title>
+    <title>Contact Us | SlashNPA Authority</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="logo.png" type="image/png">
 </head>
 <body>
-    <!-- HEADER -->
+    <div class="top-bar"><div class="top-info"><span>✉️ rohit@slashnpa.com</span><span>📍 Mumbai, India</span></div></div>
     <header class="header">
         <div class="header-inner">
-            <a href="index.html" class="header-logo">
-                <img src="logo.png" alt="SlashNPA Logo">
-            </a>
+            <a href="index.html" class="header-logo"><img src="logo.png" alt="SlashNPA Logo"></a>
             <nav class="nav-menu">
                 <a href="index.html">Home</a>
-                <a href="about.html">Expertise</a>
+                <a href="about.html">About Us</a>
                 <a href="legalforce.html">LegalForce</a>
                 <a href="assetshield.html">AssetShield</a>
                 <a href="settleright.html">SettleRight</a>
-                <a href="contact.html" class="active">Consult an Expert</a>
+                <a href="contact.html" class="active nav-cta">Book Schedule Now</a>
             </nav>
         </div>
     </header>
 
-    <!-- HERO -->
-    <section class="hero" style="padding-top: 180px; padding-bottom: 80px;">
+    <section class="hero" style="padding: 100px 40px;">
         <div class="container">
-            <div class="hero-content" style="text-align: left; max-width: 100%;">
-                <span class="section-label">Connect with Authority</span>
-                <h1 style="font-size: 4rem;">Discuss Your <br><span>Portfolio Strategy.</span></h1>
-                <p style="margin: 0; max-width: 800px;">Our specialized resolution experts are available for institutional consultations across India.</p>
+            <div class="hero-content">
+                <span class="section-label">Contact Authority</span>
+                <h1>Discuss Your <span>Portfolio.</span></h1>
+                <p>Confidential institutional consultations for NPA resolution mandates across India.</p>
             </div>
         </div>
     </section>
 
-    <!-- CONTACT FORM -->
     <section class="section section-alt">
-        <div class="container">
-            <div class="grid-2">
-                <div>
-                    <h2 style="font-size:2.8rem; font-weight:900; color:var(--navy); margin-bottom:24px;">Send a Mandate</h2>
-                    <p style="color:var(--text-muted); margin-bottom:32px;">Fill in the form below for a confidential discussion on your stressed asset portfolio.</p>
-                    
-                    <form id="contactForm" action="https://formspree.io/rohit@slashnpa.com" method="POST">
-                        <div class="form-group">
-                            <label>Full Name</label>
-                            <input type="text" name="name" placeholder="Institutional Representative" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Official Email</label>
-                            <input type="email" name="email" placeholder="name@bank.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Mobile Number</label>
-                            <input type="tel" name="mobile" placeholder="+91 00000 00000" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Requirement</label>
-                            <textarea name="message" placeholder="Portfolio details or specific resolution needs..."></textarea>
-                        </div>
-                        <button type="submit" class="nav-cta" style="border:none; width:100%; cursor:pointer;">Initiate Consultation →</button>
-                    </form>
-                </div>
-                <div style="background: var(--navy); padding: 50px; border-radius: 30px; color: white;">
-                    <h3 style="color: var(--gold); margin-bottom: 32px;">Institutional HQ</h3>
-                    <div style="margin-bottom: 24px;">
-                        <h4 style="margin-bottom: 8px;">Email Address</h4>
-                        <p style="opacity: 0.8;">rohit@slashnpa.com</p>
+        <div class="form-container">
+            <div style="background: var(--white); padding: 50px; border-radius: 20px; box-shadow: var(--shadow);">
+                <form action="https://formspree.io/rohit@slashnpa.com" method="POST">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" name="name" placeholder="Institutional Representative" required>
                     </div>
-                    <div style="margin-bottom: 24px;">
-                        <h4 style="margin-bottom: 8px;">Location</h4>
-                        <p style="opacity: 0.8;">Mumbai, Maharashtra<br>India</p>
+                    <div class="form-group">
+                        <label>Official Email</label>
+                        <input type="email" name="email" placeholder="name@bank.com" required>
                     </div>
-                    <div style="margin-bottom: 24px;">
-                        <h4 style="margin-bottom: 8px;">Operating Hours</h4>
-                        <p style="opacity: 0.8;">Mon – Sat: 09:00 AM – 19:00 PM IST</p>
+                    <div class="form-group">
+                        <label>Requirement</label>
+                        <textarea name="message" placeholder="Portfolio details..."></textarea>
                     </div>
-                </div>
+                    <button type="submit" class="form-btn">SEND YOUR MESSAGE</button>
+                </form>
+            </div>
+            <div style="background: var(--primary); padding: 50px; border-radius: 20px; color: white;">
+                <h3 style="color: var(--gold); margin-bottom: 25px;">Institutional HQ</h3>
+                <p style="margin-bottom: 20px; opacity: 0.8;">Mumbai, Maharashtra, India</p>
+                <p style="margin-bottom: 20px; opacity: 0.8;">Email: rohit@slashnpa.com</p>
+                <p style="opacity: 0.8;">Hours: Mon – Sat (9 AM – 7 PM)</p>
             </div>
         </div>
     </section>
 
-    <!-- FLOATING WHATSAPP -->
-    <a href="https://api.whatsapp.com/send?phone=919876543210&text=Consult%20with%20SlashNPA%20Expert" class="wa-float" target="_blank">
-        <span>Chat with Expert</span>
-    </a>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <img src="logo.png" alt="SlashNPA" style="height: 60px; margin-bottom: 24px;">
-                    <p style="color: var(--text-muted);">India's premier resolution authority for Banks, NBFCs, and ARCs.</p>
-                </div>
-                <div>
-                    <h4>Intelligence</h4>
-                    <ul class="footer-links">
-                        <li><a href="legalforce.html">LegalForce</a></li>
-                        <li><a href="assetshield.html">AssetShield</a></li>
-                        <li><a href="settleright.html">SettleRight</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Authority</h4>
-                    <ul class="footer-links">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Expert Team</a></li>
-                        <li><a href="#">Market Insights</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Contact</h4>
-                    <ul class="footer-links">
-                        <li><a href="mailto:rohit@slashnpa.com">rohit@slashnpa.com</a></li>
-                        <li><a href="#">Mumbai HQ, India</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div style="margin-top: 60px; padding-top: 32px; border-top: 1px solid rgba(0,0,0,0.05); text-align: center; color: var(--text-muted); font-size: 0.9rem;">
-                © 2026 SlashNPA Authority. Reducing NPAs. Restoring Values.
-            </div>
-        </div>
-    </footer>
+    <footer class="footer"><div class="footer-grid"><div><img src="logo.png" alt="SlashNPA" style="height: 60px;"></div><div><h4>Expertise</h4><ul class="footer-links"><li><a href="legalforce.html">LegalForce</a></li><li><a href="assetshield.html">AssetShield</a></li><li><a href="settleright.html">SettleRight</a></li></ul></div><div><h4>Company</h4><ul class="footer-links"><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li></ul></div><div><h4>HQ Mumbai</h4><p>Maharashtra, India</p></div></div></footer>
 </body>
 </html>
