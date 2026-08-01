@@ -79,6 +79,41 @@ img { max-width: 100%; height: auto; }
     width: auto;
 }
 
+/* Brand text next to logo */
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.header-brand {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.25;
+}
+
+.header-brand-name {
+    font-family: "Mulish", sans-serif;
+    font-size: 1.55rem;
+    font-weight: 900;
+    color: var(--primary);
+    letter-spacing: -0.3px;
+}
+
+.brand-npa {
+    color: var(--accent);
+}
+
+.header-brand-tagline {
+    font-family: "Mulish", sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
 .nav-menu {
     display: flex;
     align-items: center;
@@ -401,6 +436,8 @@ img { max-width: 100%; height: auto; }
     body { padding-top: 88px; } /* 80px logo + 8px padding */
     .header-inner { padding: 4px 16px; }
     .header-logo img { height: 80px; } /* fills ~91% of 88px box */
+    .header-brand-name { font-size: 1.2rem; }
+    .header-brand-tagline { font-size: 0.55rem; letter-spacing: 1px; }
     .nav-menu { display: none; }
     .top-bar { display: none; }
     .hero { padding: 60px 20px; }
